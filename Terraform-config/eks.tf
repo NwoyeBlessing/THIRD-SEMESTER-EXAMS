@@ -14,13 +14,13 @@ vpc_id = module.vpc.vpc_id
 project_group = [
         {
             name = "Project-Group-1"
-            instance_type = "t2.micro"
+            instance_type = "t2.medium"
             asg_desired_capacity = 2
             additional_security_group_ids = [aws_security_group.project_group_one.id]
         },
         {
             name = "Project-Group-2"
-            instance_type = "t2.micro"
+            instance_type = "t2.medium"
             asg_desired_capacity = 1
             additional_security_group_ids = [aws_security_group.project_group_two.id]
         },
