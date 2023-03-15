@@ -1,6 +1,6 @@
 variable "access_key" {
-  default = "Accesskey"
+  default = "<Your-AWS-Access-Key>"
 }
 variable "secret_key" {
-    default = "SecretKey"
+    default = "<Your-AWS-Secret-Key>"
 }
