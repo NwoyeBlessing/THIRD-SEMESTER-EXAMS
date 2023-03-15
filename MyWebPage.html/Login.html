@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+            <td width="500">
+        
+                <button onclick="document.location"> <a href="AboutMe.html">AboutMe</a></button>
+                <button onclick="document.location"><a href="Contact.html">Contact</a></button>
+                <button onclick="document.location"><a href="Register.html">Register</a></button>
+                <button onclick="document.location"><a href="Login.html">Login</a></button>
+                <button onclick="document.location"><a href="Calculator.html">Calculator</a></button>
+              </td>
+        
+    
+    <h2>My Login Page</h2>
+    
+    <button style="background-color: #04AA6D;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 10%;"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+    Login</button>
+    
+    <div id="id01" class="loginpage">
+      
+      <form class="loginpage-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close loginpage">&times;</span>
+          <img src="avatar.jpeg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="Submit" style="background-color: #04AA6D;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 10%;"> Login </button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" style="background-color: #04AA6D;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 10%;"onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Forget Password </button>
+            <br>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the loginpage
+    var loginpage = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the loginpage, close it
+    window.onclick = function(event) {
+        if (event.target == loginpage) {
+          loginpage.style.display = "none";
+        }
+    }
+    </script>
+    
+    </body>
+</html>
